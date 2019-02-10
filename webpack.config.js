@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve('lib'),
-        filename: 'index.js',
+        filename: 'bundle.js',
         libraryTarget: 'commonjs2'
     },
     module: {
@@ -13,8 +13,12 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
-                use: 'babel-loader'
-            }
+                use: 'babel-loader',
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+              }
         ]
     }
 }

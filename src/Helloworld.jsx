@@ -1,3 +1,3 @@
 import React from 'react'
 
-export const Helloworld=()=><div>{'helloworld!'}</div>
+export  const  Helloworld=()=><div>{'helloworld!'}</div>
