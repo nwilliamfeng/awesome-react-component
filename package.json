@@ -1,6 +1,6 @@
 {
     "name": "awesome-react-component",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "description": "a couple of react components",
     "main": "./lib/bundle.js",
     "license": "MIT",
@@ -19,7 +19,7 @@
         "babel-preset-react": "^6.16.0",
         "babel-preset-stage-0": "^6.24.1",
         "path": "^0.12.7",
-        "prop-types": "^15.6.0",
+        "prop-types": "^15.7.1",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
         "webpack": "^4.5.0",

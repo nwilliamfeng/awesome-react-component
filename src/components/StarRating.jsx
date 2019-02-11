@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/star-rating.css';
-
+import PropTypes from 'prop-types';
+import { prototype } from 'stream';
 
 const Star = ({ size, stroke, color}) => {
     return <div className='star'  style={{ padding: 1, height: size ? size : 24, width: size ? size : 24, background: stroke ? stroke : 'gray' }}>
@@ -50,4 +51,17 @@ export class StarRating extends Component {
     }
 }
 
+StarRating.propTypes ={
+    rating:PropTypes.number.isRequired,
+    color:PropTypes.string.isRequired,
+    stroke:PropTypes.string,
+    size:PropTypes.number,
+}
+
+StarRating.defaultProps ={
+    rating:0,
+    color:'orange',
+    stroke:'gray',
+    size:16,
+}
  
